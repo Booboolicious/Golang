@@ -5,8 +5,19 @@ import (
 )
 
 func main(){
-	userSelect = 3
 
+	userSelect = 2
 
-	switch
+	switch userSelect {
+	case 1:
+		fmt.Println("You selected coke")
+	case 2:
+		fmt.Println("You selected pepsi")
+	case 3:
+		fmt.Println("You selected mountain dew")
+	case 4:
+		fmt.Println("You selected sprite")
+	default:
+		fmt.Println("this item is not on the list")
+	}
 }
