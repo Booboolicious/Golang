@@ -6,7 +6,7 @@ import (
 
 func main(){
 
-	userSelect = 2
+	userSelect := 2
 
 	switch userSelect {
 	case 1:
