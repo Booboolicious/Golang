@@ -8,6 +8,8 @@ import (
 func main(){
 	firstName := "John"
 	lastName := "Doe"
-	fullName := firstName + " " + lastName
+	age := 28.4
+	fullName := fmt.Sprintf("%s-%s %.2f", firstName, lastName, age)
 	fmt.Println(strings.ToUpper(fullName))
+
 }
