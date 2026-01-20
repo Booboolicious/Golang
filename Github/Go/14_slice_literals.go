@@ -4,5 +4,6 @@ import "fmt"
 
 func main(){
 	result := []string{"Ezekiel", "Augustine"}
-	fmt.Println(result)
+	result[3] = "aba"
+	fmt.Println(result, result[1], result[len(result)-2])
 }
