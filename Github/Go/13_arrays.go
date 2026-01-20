@@ -3,6 +3,8 @@ package main
 import "fmt"
 
 func main(){
-	fmt.Println("Aniema")
-	
+
+	var mark [3]int
+	fmt.Println(mark)
+
 }
