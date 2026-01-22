@@ -21,9 +21,12 @@ func main (){
 
 	var users map[string]string
 
-	users= {
-		"u1":
+	users = map[string]string{
+		"u1":"james",
+		"u2":"john",
+		"u3":"timothy",
 	}
 
+	fmt.Println(users)
 
 }
