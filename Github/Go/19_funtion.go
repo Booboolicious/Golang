@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 
-func SumAndProduct (a int, b int) (int, int) (int, int){
+func math (a int, b int) (int, int, int){
 	sum := a + b
 	product := a * b
 	div := a/b
@@ -11,8 +11,8 @@ func SumAndProduct (a int, b int) (int, int) (int, int){
 }
 
 func main(){
-	sum1, _, _ := SumAndProduct(10, 21)
-	_, product, _ := SumAndProduct(5, 5)
+	sum1, _, _ := math(10, 21)
+	_, product, _ := math(5, 5)
 
 	fmt.Println(sum1,product)
 }
