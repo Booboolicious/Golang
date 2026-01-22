@@ -21,10 +21,11 @@ func main (){
 	fmt.Println(valB, okB)
 
 
-	if val, ok:= m["b"]{
-		fmt.Println(m["b"])
+	if val, ok:= m["k"]; ok{
+		fmt.Println(val)
 	} else {
 		fmt.Println("Not in the map")
 	}
+
 
 }
