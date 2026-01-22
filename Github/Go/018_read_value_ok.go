@@ -17,14 +17,15 @@ func main (){
 	valD, okD := m["d"]
 	fmt.Println(valD, okD)
 
-	valB, okB := m["b"]
-	fmt.Println(valB, okB)
+	valueB, okB := m["b"]
+	fmt.Println(valueB, okB)
 
+	key := "p"
 
-	if val, ok:= m["k"]; ok{
-		fmt.Println("k", val)
+	if val, ok:= m[key]; ok{
+		fmt.Println(key, val)
 	} else {
-		fmt.Println("Not in the map")
+		fmt.Println(key, "is not in the map")
 	}
 
 
