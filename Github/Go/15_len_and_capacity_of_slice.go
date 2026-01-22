@@ -26,7 +26,7 @@ func main(){
 
 	todo := []string{"sleep,", "eat,", "code &"}
 	extra :=[]string{"fuck hard"}
-
+// ... is like a spread operator
 	todo = append(todo, extra...)
 	fmt.Println(todo)
 }
