@@ -17,5 +17,13 @@ func main (){
 	
 	scores = make(map[string]int)
 	scores["A"] = 5
-	fmt.Println(scores)
+	fmt.Println(scores, scores["A"])
+
+	var users map[string]string
+
+	users= {
+		"u1":
+	}
+
+
 }
