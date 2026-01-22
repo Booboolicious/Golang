@@ -22,4 +22,10 @@ func main(){
 
 	scores = append(scores, 10, 50)
 	fmt.Println(scores, len(scores), cap(scores))
+
+
+	todo := []string{"sleep", "eat", "code"}
+	extra :=[]string{"fuck hard"}
+
+	todo = append
 }
