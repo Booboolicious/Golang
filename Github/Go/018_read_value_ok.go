@@ -17,8 +17,8 @@ func main (){
 	valD, okD := m["d"]
 	fmt.Println(valD, okD)
 
-	valueB, okB := m["b"]
-	fmt.Println(valueB, okB)
+	val, okB := m["b"]
+	fmt.Println(val, okB)
 
 	key := "p"
 
@@ -28,5 +28,8 @@ func main (){
 		fmt.Println(key, "is not in the map")
 	}
 
+	for key := range m {
+		fmt.Println(key)
+	}
 
 }
