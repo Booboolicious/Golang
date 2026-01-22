@@ -28,5 +28,7 @@ func main (){
 	}
 
 	fmt.Println(users)
-
+	
+	delete(users, "john")
+	fmt.Println(users)
 }
