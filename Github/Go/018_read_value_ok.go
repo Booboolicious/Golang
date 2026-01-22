@@ -32,4 +32,8 @@ func main (){
 		fmt.Println(key)
 	}
 
+	for _, value := range m {
+		fmt.Println(value)
+	}
+
 }
