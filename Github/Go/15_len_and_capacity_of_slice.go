@@ -24,8 +24,9 @@ func main(){
 	fmt.Println(scores, len(scores), cap(scores))
 
 
-	todo := []string{"sleep", "eat", "code"}
+	todo := []string{"sleep,", "eat,", "code &"}
 	extra :=[]string{"fuck hard"}
 
-	todo = append
+	todo = append(todo, extra...)
+	fmt.Println(todo)
 }
