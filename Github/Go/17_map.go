@@ -28,7 +28,7 @@ func main (){
 	}
 
 	fmt.Println(users)
-	
-	delete(users, "john")
+	// delete is a property
+	delete(users, "u2")
 	fmt.Println(users)
 }
