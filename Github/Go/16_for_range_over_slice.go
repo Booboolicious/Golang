@@ -8,9 +8,9 @@ func main (){
 	total := 0
 
 	for index, value := range view {
-		fmt.Println("Day", index, "views", value)
 		total += value
+		fmt.Println("Day", index, "views", value)
 	}
 
-	fmt.Println()
+	fmt.Println(total)
 }
