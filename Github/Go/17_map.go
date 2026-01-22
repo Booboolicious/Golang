@@ -10,4 +10,8 @@ func main (){
 	}
 
 	fmt.Println(ages["ezekiel"], len(ages))
+
+	var scores = map[string]int
+
+	fmt.Println(scores, )
 }
