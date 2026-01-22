@@ -5,5 +5,5 @@ import "fmt"
 func main(){
 
 	scores := make([]int, 0,5)
-	fmt.Println(scores)
+	fmt.Println(scores, len(scores), cap(scores))
 }
