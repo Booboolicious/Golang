@@ -13,4 +13,9 @@ func main (){
 	fmt.Println("d", m["d"])
 	fmt.Println("e", m["e"])
 	fmt.Println("b", m["b"])
+
+	valB, okB := m["b"]
+
+
+
 }
