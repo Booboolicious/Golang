@@ -11,7 +11,11 @@ func main (){
 
 	fmt.Println(ages["ezekiel"], len(ages))
 
-	var scores = map[string]int
+	var scores map[string]int
 
-	fmt.Println(scores, )
+	fmt.Println(scores, scores["A"])
+	
+	scores = make(map[string]int)
+	scores["A"] = 5
+	fmt.Println(scores)
 }
