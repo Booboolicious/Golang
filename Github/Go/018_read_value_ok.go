@@ -22,7 +22,7 @@ func main (){
 
 
 	if val, ok:= m["k"]; ok{
-		fmt.Println(m[0], val)
+		fmt.Println(index, val)
 	} else {
 		fmt.Println("Not in the map")
 	}
