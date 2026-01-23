@@ -30,4 +30,12 @@ func main (){
 	}
 	a, b := res(3)
 	fmt.Println(a, b)
+
+	res2 := func(n int) int {
+		return n * 2,
+			n * 3
+	}(4, 5)
+	// a, b := res(3)
+	// fmt.Println(a, b)
+	fmt.Println(res2)
 }
