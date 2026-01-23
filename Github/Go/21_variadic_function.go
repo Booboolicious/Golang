@@ -19,4 +19,12 @@ func main (){
 	values:= []int{5,7,6,4,8}
 
 	fmt.Println(sumAll(values...))
+
+
+	// Anonymous function
+
+	res := func (n int) int{
+		return n*2
+	}
+	fmt.Println(res(3))
 }
