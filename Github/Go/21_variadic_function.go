@@ -22,9 +22,10 @@ func main (){
 
 
 	// Anonymous function
-
-	res := func (n int) int{
-		return n*2
+	res := func(n int) (int, int) {
+		return n * 2,
+			n * 3
 	}
-	fmt.Println(res(3))
+	a, b := res(3)
+	fmt.Println(a, b)
 }
