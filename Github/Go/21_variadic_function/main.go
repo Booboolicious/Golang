@@ -31,11 +31,9 @@ func main (){
 	a, b := res(3)
 	fmt.Println(a, b)
 
+	// IIFE Immediately Invoked Function Expression
 	res2 := func(n int) int {
-		return n * 2,
-			n * 3
-	}(4, 5)
-	// a, b := res(3)
-	// fmt.Println(a, b)
+		return n * 2
+	}(4)
 	fmt.Println(res2)
 }
