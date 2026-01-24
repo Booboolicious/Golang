@@ -2,6 +2,7 @@ package main
 
 import (
 	"fmt"
+	// "go/types"
 	"log"
 	"reflect"
 	"strconv"
@@ -9,7 +10,8 @@ import (
 
 
 func main(){
-	fmt.Println(typesOf("hey"))
+	// fmt.Println(typesOf("hey"))
+	fmt.Println(`%T\n`,"hey")
 	if err := run(); err != nil {
 		log.Fatal(err)
 	}
