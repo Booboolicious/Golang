@@ -8,7 +8,7 @@ import (
 
 
 func main(){
-	fmt.Println(`"hey"`)
+	fmt.Println(typ `"hey"`)
 	if err := run(); err != nil {
 		log.Fatal(err)
 	}
@@ -16,7 +16,7 @@ func main(){
 
 
 func run () error{
-	input := `3o0`
+	input := `30`
 
 	level, err := parseLevel(input)
 
@@ -36,7 +36,9 @@ func parseLevel(s string)(int, error){
 	if err != nil {
 		return 0, fmt.Errorf(`level must be a number`)
 	}
-	if n < 1 || n > 
+	if n < 1 || n > 7 {
+		return 0, fmt.Errorf(`"Level must be btwn one and seven"`)
+	}
 	return  n, nil
 
 }
