@@ -10,7 +10,7 @@ import (
 
 
 func main(){
-	fmt.Println(reflect.TypeOf(`yes`))
+	fmt.Println(reflect.TypeOf(5))
 	// fmt.Println(typesOf(true))
 	if err := run(); err != nil {
 		log.Fatal(err)
