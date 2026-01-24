@@ -11,7 +11,7 @@ import (
 
 func main(){
 	fmt.Println(typesOf(true))
-	fmt.Println(reflect.TypeOf(2))
+	fmt.Println(reflect.TypeOf(`yes`))
 	if err := run(); err != nil {
 		log.Fatal(err)
 	}
