@@ -19,6 +19,8 @@ func parseLevel(s string)(int, error){
 
 	n, err := strconv.Atoi(s)
 	if err != nil {
-		return
+		return 404, fmt.Errorf(`level must be a number`)
 	}
+
+	if 
 }
