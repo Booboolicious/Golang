@@ -10,8 +10,8 @@ import (
 
 
 func main(){
-	// fmt.Println(typesOf("hey"))
-	fmt.Printf(`%T`,"hey")
+	fmt.Println(typesOf(true))
+	fmt.Println(reflect.TypeOf(2))
 	if err := run(); err != nil {
 		log.Fatal(err)
 	}
