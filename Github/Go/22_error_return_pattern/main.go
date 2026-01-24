@@ -2,17 +2,22 @@ package main
 
 import (
 	"fmt"
-	"go/types"
 	"log"
+	"reflect"
 	"strconv"
 )
 
 
 func main(){
-	fmt.Println(typesOf `"hey"`)
+	fmt.Println(typesOf("hey"))
 	if err := run(); err != nil {
 		log.Fatal(err)
 	}
+}
+
+// typesOf returns the Go type of any value, similar to JavaScript's typeof.
+func typesOf(v interface{}) string {
+    return reflect.TypeOf(v).String()
 }
 
 
