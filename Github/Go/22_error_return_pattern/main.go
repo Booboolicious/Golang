@@ -11,7 +11,7 @@ import (
 
 func main(){
 	// fmt.Println(typesOf("hey"))
-	fmt.Println(`%T\n`,"hey")
+	fmt.Printf(`%T`,"hey")
 	if err := run(); err != nil {
 		log.Fatal(err)
 	}
@@ -24,7 +24,7 @@ func typesOf(v interface{}) string {
 
 
 func run () error{
-	input := `30`
+	input := `3`
 
 	level, err := parseLevel(input)
 
