@@ -1,9 +1,21 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"strconv"
+)
 
 
 func main(){
 	fmt.Println(`"hey"`)
 }
 
+
+func run () error{
+
+}
+
+func parseLevel(s string)(int, error){
+
+	n, err := strconv.Atoi()
+}
