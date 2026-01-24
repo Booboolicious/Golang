@@ -2,13 +2,14 @@ package main
 
 import (
 	"fmt"
+	"go/types"
 	"log"
 	"strconv"
 )
 
 
 func main(){
-	fmt.Println(typ `"hey"`)
+	fmt.Println(typesOf `"hey"`)
 	if err := run(); err != nil {
 		log.Fatal(err)
 	}
