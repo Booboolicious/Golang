@@ -18,7 +18,7 @@ func main(){
 }
 
 // typesOf returns the Go type of any value, similar to JavaScript's typeof.
-func typesOf(v interface{}) string {
+func typesOf(v interface{} /*any*/) string {
     return reflect.TypeOf(v).String()
 }
 
