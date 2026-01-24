@@ -17,5 +17,8 @@ func run () error{
 
 func parseLevel(s string)(int, error){
 
-	n, err := strconv.Atoi()
+	n, err := strconv.Atoi(s)
+	if err != nil {
+		return
+	}
 }
