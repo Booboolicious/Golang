@@ -37,7 +37,7 @@ func run () error{
 	return nil
 }
 
-func parseLevel(s interface{})(int, error){
+func parseLevel(s string)(int, error){
 
 	n, err := strconv.Atoi(s)
 	if err != nil {
