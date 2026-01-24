@@ -10,17 +10,16 @@ import (
 
 
 func main(){
-	fmt.Println(typesOf(true))
 	fmt.Println(reflect.TypeOf(`yes`))
+	// fmt.Println(typesOf(true))
 	if err := run(); err != nil {
 		log.Fatal(err)
 	}
 }
 
-// typesOf returns the Go type of any value, similar to JavaScript's typeof.
-func typesOf(v interface{} /*any*/) string {
-    return reflect.TypeOf(v).String()
-}
+// func typesOf(v interface{} /*any*/) string {
+//     return reflect.TypeOf(v).String()
+// }
 
 
 func run () error{
