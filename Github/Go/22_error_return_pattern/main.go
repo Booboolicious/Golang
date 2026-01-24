@@ -12,7 +12,15 @@ func main(){
 
 
 func run () error{
+	input := `3`
 
+	level, err := parseLevel(input)
+
+	if err != nil{
+		return err
+	}
+	fmt.Println(`Selected Level`, level)
+	
 }
 
 func parseLevel(s string)(int, error){
@@ -21,6 +29,6 @@ func parseLevel(s string)(int, error){
 	if err != nil {
 		return 404, fmt.Errorf(`level must be a number`)
 	}
+	return  n, nil
 
-	if 
 }
