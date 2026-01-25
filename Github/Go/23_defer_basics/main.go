@@ -6,29 +6,29 @@ import (
 
 
 func main (){
-	my.Log(`"Case 1: success"`)
-	my.Log.Typeof(42)
-	my.Log.Typeof("Hello")
+	Log(`"Case 1: success"`)
+	Log.Typeof(42)
+	Log.Typeof("Hello")
 	if err := doWork(true); err != nil {
-		my.Log(`error`, err)
+		Log(`error`, err)
 	}
 
-	my.Log(`"Case 1: fail early"`)
+	Log(`"Case 1: fail early"`)
 	if err := doWork(false); err != nil {
-		my.Log(`error`, err)
+		Log(`error`, err)
 	}
 }
 
 func doWork (success bool) error {
-	my.Log(`"start: resource acquired"`)
-	defer my.Log(`"clean up: resource released"`)
+	Log(`"start: resource acquired"`)
+	defer Log(`"clean up: resource released"`)
 
 	if !success {
-		return  my.Log.Err(`something went wrong, "returning early"`)
+		return  Log.Err(`something went wrong, "returning early"`)
 		
 	}
-	my.Log(`work: doing somthing important`)
-	my.Log(`work: It's over`)
+	Log(`work: doing somthing important`)
+	Log(`work: It's over`)
 	
 	return nil
 }
