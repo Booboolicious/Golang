@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/Booboolicious/Golang/my"
+	."github.com/Booboolicious/Golang/my"
 )
 
 
