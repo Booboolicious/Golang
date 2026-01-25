@@ -2,21 +2,23 @@ package main
 
 import (
 	"fmt"
-	"github.com/Booboolicious/Golang/Github/Go/mylog"
+
+	"github.com/Booboolicious/Golang/Github/Go/my"
+	"github.com/Booboolicious/Golang/my"
 )
 
 
 func main (){
-	log(`"Case 1: success"`)
-	log.typeof(42)
-	log.typeof("Hello")
+	my.Log(`"Case 1: success"`)
+	my.Log.typeof(42)
+	my.Log.typeof("Hello")
 	if err := doWork(true); err != nil {
-		log(`error`, err)
+		my.Log(`error`, err)
 	}
 
-	log(`"Case 1: fail early"`)
+	my.Log(`"Case 1: fail early"`)
 	if err := doWork(false); err != nil {
-		log(`error`, err)
+		my.Log(`error`, err)
 	}
 }
 
