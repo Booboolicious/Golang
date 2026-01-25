@@ -8,9 +8,13 @@ import (
 
 func main (){
 	fmt.Println(`"Case 1: success"`)
-
 	if err := doWork(true); err != nil {
-		fmt.
+		log(`error`, err)
+	}
+
+	fmt.Println(`"Case 1: fail early"`)
+	if err := doWork(false); err != nil {
+		log(`error`, err)
 	}
 }
 
@@ -29,6 +33,6 @@ func doWork (success bool) error {
 }
 
 
-func log(input any){
+func log(input ...any){
 	fmt.Println(log)
 }
