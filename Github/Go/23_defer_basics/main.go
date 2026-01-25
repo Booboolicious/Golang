@@ -7,7 +7,11 @@ import (
 
 
 func main (){
-	fmt.Println(`"hell ya"`)
+	fmt.Println(`"Case 1: success"`)
+
+	if err := doWork(true); err != nil {
+		fmt.
+	}
 }
 
 func doWork (success bool) error {
@@ -19,5 +23,12 @@ func doWork (success bool) error {
 		
 		fmt.Println(`work: doing somthing important`)
 		fmt.Println(`work: It's over`)
+		
+		return nil
 	}
+}
+
+
+func log(input any){
+	fmt.Println(log)
 }
