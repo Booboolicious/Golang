@@ -13,7 +13,7 @@ func main (){
 		Log(`error`, err)
 	}
 
-	Log(`"Case 1: fail early"`)
+	Log(`"Case 2: failed early"`)
 	if err := doWork(false); err != nil {
 		Log(`error`, err)
 	}
