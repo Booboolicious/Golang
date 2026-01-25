@@ -2,11 +2,14 @@ package main
 
 import (
 	"fmt"
+	"reflect"
 )
 
 
 func main (){
 	log(`"Case 1: success"`)
+	log.typeof(42)
+	log.typeof("Hello")
 	if err := doWork(true); err != nil {
 		log(`error`, err)
 	}
@@ -36,8 +39,12 @@ type logger func(...any)
 
 func (l logger) err(format string, a ...any) error {
 	err := fmt.Errorf(format, a...)
-	l("[!] ERROR:", err)
+	l("ERROR:", err)
 	return err
+}
+
+func (l logger) typeof(v any) {
+	l(fmt.Sprintf("TYPE: %v", reflect.TypeOf(v)))
 }
 
 var log logger = func(a ...any) {
