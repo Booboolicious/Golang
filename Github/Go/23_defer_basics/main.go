@@ -22,7 +22,8 @@ func doWork (success bool) error {
 	defer log(`"clean up: resource released"`)
 
 	if !success {
-		return log.err("something went wrong, %s", `"returning early"`)
+		return  log.err(`something went wrong, "returning early"`)
+		
 	}
 	log(`work: doing somthing important`)
 	log(`work: It's over`)
