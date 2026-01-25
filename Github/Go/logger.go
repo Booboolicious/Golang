@@ -2,21 +2,23 @@ package mylog
 
 import (
 	"fmt"
+// "reflect"
+
 )
 
-type logger func(...any)
+type Logger func(...any)
 
-func (l logger) err(format string, a ...any) error {
+func (l Logger) Err(format string, a ...any) error {
 	err := fmt.Errorf(format, a...)
 	l("ERROR:", err)
 	return err
 }
 
-func (l logger) typeof(v any) {
+func (l Logger) Typeof(v any) {
 	l(fmt.Sprintf("TYPE: %T", v ))
 	// l(fmt.Sprintf("TYPE: %v", reflect.TypeOf(v)))
 }
 
-var log logger = func(a ...any) {
+var Log Logger = func(a ...any) {
 	fmt.Println(a...)
 }
