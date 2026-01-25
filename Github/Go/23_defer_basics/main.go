@@ -44,7 +44,7 @@ func (l logger) err(format string, a ...any) error {
 }
 
 func (l logger) typeof(v any) {
-	l(fmt.Sprintf("TYPE: %T", v /*reflect.TypeOf(v)*/))
+	l(fmt.Sprintf("TYPE: %T", v ))
 	// l(fmt.Sprintf("TYPE: %v", reflect.TypeOf(v)))
 }
 
