@@ -1,7 +1,6 @@
 package main
 
 import (
-	"errors"
 	"fmt"
 )
 
@@ -23,8 +22,7 @@ func doWork (success bool) error {
 	defer log(`"clean up: resource released"`)
 
 	if !success {
-		return  errors.New(`something went wrong, "returning early"`)
-		
+		return log.err("something went wrong, %s", `"returning early"`)
 	}
 	log(`work: doing somthing important`)
 	log(`work: It's over`)
@@ -33,6 +31,14 @@ func doWork (success bool) error {
 }
 
 
-func log(input ...any) {
-    fmt.Println(input...)
+type logger func(...any)
+
+func (l logger) err(format string, a ...any) error {
+	err := fmt.Errorf(format, a...)
+	l("[!] ERROR:", err)
+	return err
+}
+
+var log logger = func(a ...any) {
+	fmt.Println(a...)
 }
