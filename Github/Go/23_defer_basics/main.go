@@ -15,7 +15,6 @@ func main (){
 
 	Log(`"Case 2: failed early"`)
 	if err := doWork(false); err != nil {
-		Log(`error`, err)
 	}
 }
 
