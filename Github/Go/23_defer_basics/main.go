@@ -6,9 +6,9 @@ import (
 
 
 func main (){
-	Log(`"Case 1: success"`)
 	Log.Typeof(42)
 	Log.Typeof("Hello")
+	Log(`"Case 1: success"`)
 	if err := doWork(true); err != nil {
 		Log(`error`, err)
 	}
